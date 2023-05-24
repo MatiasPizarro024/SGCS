@@ -9,7 +9,7 @@
   <h1>Encriptación de Número</h1>
   <form>
     <label>Número de 4 dígitos:</label>
-    <input type="text" id="numero" required>
+    <input type="text" oninput="validarNumero(this)" id="numero" required>
     <button type="button" onclick="encriptarNumero()">Encriptar</button>
     <br>
     <label>Número encriptado:</label>
@@ -18,7 +18,7 @@
   <h1>Desencriptar Número</h1>
   <form>
     <label>Número encriptado de 4 dígitos:</label>
-    <input type="text" id="numero-encriptado-desencriptar" required>
+    <input type="text" oninput="validarNumero(this)" id="numero-encriptado-desencriptar" required>
     <button type="button" onclick="desencriptarNumero()">Desencriptar</button>
     <br>
     <label>Número desencriptado:</label>

@@ -19,3 +19,10 @@ function desencriptarNumero() {
     const numeroDesencriptado = '' + digito1 + digito2 + digito3 + digito4;
     document.getElementById('numero-desencriptado').value = numeroDesencriptado;
 }
+
+function validarNumero(input) {
+    input.value = input.value.replace(/[^0-9]/g, '');
+    if (input.value.length > 4) {
+      input.value = input.value.slice(0, 4);
+    }
+  }
